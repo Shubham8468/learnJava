@@ -1,6 +1,6 @@
 package BinaryTree2;
 
-public class sumOFBt {
+public class  sumOFBt {
     public static class Node{
         int data;
 

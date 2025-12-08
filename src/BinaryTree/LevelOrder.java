@@ -1,6 +1,6 @@
 package BinaryTree;
 import java.util.*;
-public class LevelOrder {
+public class  LevelOrder {
     public static class Node{
         int data;
         Node left;

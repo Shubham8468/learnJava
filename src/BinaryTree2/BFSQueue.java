@@ -28,13 +28,11 @@ public class BFSQueue {
             return Integer.MAX_VALUE;
         }
         return Math.min(root.data,Math.min(minval(root.left),minval(root.right)));
-
     }
     public static int maxnum(Node root){
         if(root==null)return Integer.MIN_VALUE;
         return Math.max(root.data,Math.max(maxnum(root.left),maxnum(root.right)));
     }
-
     public static void main(String[] args) {
         Node root = new Node(1);
         Node a = new Node(2);

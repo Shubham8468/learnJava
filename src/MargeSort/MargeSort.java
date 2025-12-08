@@ -26,7 +26,7 @@ public class MargeSort {
             b[i]=arr[idx];
             idx++;
         }
-        //Stap 3 :Magic
+        //Stap 3 :Magic0
         mergeSort(a);
         mergeSort(b);
         //Step 4 :merge 'a' and 'b' into arr;
