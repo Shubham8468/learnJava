@@ -1,8 +1,6 @@
 package BinaryTree2;
-
 import java.util.LinkedList;
 import java.util.Queue;
-
 public class BFSQueue {
     public static class Node{
         int data;
@@ -51,6 +49,5 @@ public class BFSQueue {
         System.out.println(maxnum(root));
         System.out.println();
         System.out.println(minval(root));
-
     }
 }
