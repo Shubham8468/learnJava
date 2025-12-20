@@ -21,7 +21,8 @@ public class FindMaxItem {
         a.right=d;
         b.left=c;
         d.left=e;
-        System.out.println(maxIntem(a));
+//        System.out.println(maxIntem(a));
+        System.out.println(FindItem(a,33));
     }
     public static int maxIntem(Node root){
         if(root==null){
@@ -32,5 +33,18 @@ public class FindMaxItem {
             temp=temp.left;
         }
         return temp.data;
+    }
+    public static boolean FindItem(Node root, int item){
+        if(root==null){
+            return false;
+        }
+        if(root.data==item){
+            return true;
+        } else if (root.data>item) {
+            return FindItem(root.left,item);
+        }
+        else{
+            return FindItem(root.right,item);
+        }
     }
 }
