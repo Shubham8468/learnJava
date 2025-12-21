@@ -1,6 +1,5 @@
-package BinaryTree2.Questions;
+package BinaryTree2.Questions.BstLeetcode;
 
-import javax.swing.tree.AbstractLayoutCache;
 //Given a Binary Search Tree (BST) and a range l-h (inclusive),
 //your task is to return the number of nodes in the BST whose
 //value lie in the given range.
