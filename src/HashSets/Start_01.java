@@ -11,9 +11,15 @@ public class Start_01 {
         set.add(65);
         set.add(90);
         set.add(67);
-        System.out.println(set.size());
-        System.out.println(set.contains(77));// this is method for use search item in
+        //System.out.println(set.size());
+        //System.out.println(set.contains(77));// this is method for use search item in
         set.remove(77);
-        System.out.println(set.contains(77));
+        //System.out.println(set.contains(77));
+
+        //++++++++++++ How to travers is HashSet +++++++++++++++++++++++++++++++++++++++++++++++
+
+        for(int ele : set){
+            System.out.println(ele);// this is the way to travers in HashSet
+        }
     }
 }
