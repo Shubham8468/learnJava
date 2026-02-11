@@ -28,4 +28,26 @@ public class minCostClimbing {
     }
 
 
+    //+++++++++++++++++==== Best Method to solve this problem use (tabulation) +++++++++++++++++++++++
+    // i use trabulation method
+    // in this i create a arr same size of
+    // in this i use a arr and inter idex of 0 and 1 value by default
+    // than i apply a loop on it
+    // and dp[i]= cost[i] + compaire priveoue two min value and store it
+    // and final answer is give min ind value ..
+
+
+    public  int minCostClimbingStairs3(int[] cost) {
+        // Write your code here
+        int n=cost.length;
+        int[] dp= new int[n];
+        dp[0]=cost[0];
+        dp[1]=cost[1];
+        for(int i=2; i< n;i++){
+            dp[i]=cost[i]+Math.min(dp[i-2],dp[i-1]);
+        }
+        return Math.min(dp[n-2],dp[n-1]);
+    }
+
+
 }
