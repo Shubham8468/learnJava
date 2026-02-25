@@ -13,6 +13,7 @@ public class displayReverseRecu {
     }
     public static void main(String[] args) {
         Stack<Integer> st=new Stack<>();
+
         st.push(34);
         st.push(4);
         st.push(6);
