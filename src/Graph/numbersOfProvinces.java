@@ -13,11 +13,13 @@ import java.util.Queue;
 
 public class numbersOfProvinces {
     // Solution No:-1 this is the best method the solve this problem
-    public void bfs(int i, int[][] ajt, boolean[] vist,int n){
+    //this is the DFS approach for the solve this question ..
+    //In that we go depper and backtrack ..
+    public void dfs(int i, int[][] ajt, boolean[] vist,int n){
         vist[i]=true;
         for(int j= 0;j<n;j++){
             if(ajt[i][j]==1 && !vist[j]){
-                bfs(j,ajt,vist,n);// this the the recursion method for the sovle this problem
+                dfs(j,ajt,vist,n);// this the the recursion method for the sovle this problem
             }
         }
     }
@@ -27,7 +29,7 @@ public class numbersOfProvinces {
         boolean[] vist= new boolean[n];
         for(int i= 0;i<n;i++){
             if(!vist[i]){
-                bfs(i,ajt,vist,n);
+                dfs(i,ajt,vist,n);
                 count++;
             }
         }
@@ -50,8 +52,8 @@ public class numbersOfProvinces {
         q.add(i);
         while(!q.isEmpty()){
             int front=q.remove();
-            for(int j=0;j<n;j++){
-                if (adj[i][front] == 1 && !vist[j]) {
+            for(int j= 0;j<n;j++){
+                if(adj[front][j]==1 && !vist[j]){
                     q.add(j);
                     vist[j]=true;
                 }
